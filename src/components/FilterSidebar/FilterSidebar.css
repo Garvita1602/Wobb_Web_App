@@ -1,0 +1,30 @@
+.filter-sidebar {
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.filter-sidebar h2 {
+    font-size: 20px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.filter-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-sidebar li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.filter-sidebar li:hover {
+    color: #0077ff;
+    transform: scale(1.1);
+}

@@ -1,0 +1,201 @@
+/* Header Container */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004AAD;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Logo Styles */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a,
+.nav-links button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+    color: #00bfff;
+}
+
+
+/* Hamburger Menu Button */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* Responsive Design: Hamburger Menu */
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #004AAD;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.9rem;
+    }
+    .nav-links {
+        width: 180px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.85rem;
+    }
+    .nav-links {
+        width: 170px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 8px 15px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.8rem;
+    }
+    .hamburger {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        width: 160px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding: 8px 10px;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.75rem;
+    }
+    .nav-links {
+        width: 150px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 6px 10px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.7rem;
+    }
+    .nav-links {
+        width: 140px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 0.9rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.65rem;
+    }
+    .nav-links {
+        width: 130px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 5px 8px;
+    }
+    .logo {
+        font-size: 0.8rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.6rem;
+    }
+    .nav-links {
+        width: 120px;
+    }
+}
+
+@media (max-width: 300px) {
+    .header {
+        padding: 5px;
+    }
+    .logo {
+        font-size: 0.75rem;
+    }
+    .nav-links a,
+    .nav-links button {
+        font-size: 0.55rem;
+    }
+    .nav-links {
+        width: 100px;
+    }
+}

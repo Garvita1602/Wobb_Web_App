@@ -1,0 +1,256 @@
+/* Modal Overlay */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    transition: background 0.3s ease;
+}
+
+
+/* Submitted Message */
+
+.submitted-message h3 {
+    font-size: 1.5rem;
+    color: #004aad;
+    font-weight: bold;
+}
+
+
+/* Form Styling */
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+
+/* Submit Button */
+
+form button {
+    background: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #0077ff;
+    transform: scale(1.05);
+}
+
+
+/* Close Button */
+
+.close-btn {
+    margin-top: 15px;
+    background: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #0077ff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+    form input,
+    form textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    form button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+        width: 90%;
+        padding: 12px;
+    }
+    form input,
+    form textarea {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+    form button {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* For screens less than 650px */
+
+@media (max-width: 650px) {
+    .modal-content {
+        width: 90%;
+        padding: 10px;
+    }
+    form input,
+    form textarea {
+        padding: 7px;
+        font-size: 0.8rem;
+    }
+    form button {
+        padding: 7px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* For screens less than 600px */
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 10px;
+    }
+    form input,
+    form textarea {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+    form button {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+
+/* For screens less than 550px */
+
+@media (max-width: 550px) {
+    .modal-content {
+        width: 95%;
+        padding: 8px;
+    }
+    form input,
+    form textarea {
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+    form button {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* For screens less than 450px */
+
+@media (max-width: 450px) {
+    .modal-content {
+        width: 95%;
+        padding: 6px;
+    }
+    form input,
+    form textarea {
+        padding: 5px;
+        font-size: 0.65rem;
+    }
+    form button {
+        padding: 5px 8px;
+        font-size: 0.65rem;
+    }
+}
+
+
+/* For screens less than 400px */
+
+@media (max-width: 400px) {
+    .modal-content {
+        width: 95%;
+        padding: 5px;
+    }
+    form input,
+    form textarea {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+    form button {
+        padding: 5px 8px;
+        font-size: 0.6rem;
+    }
+}
+
+
+/* For screens less than 360px */
+
+@media (max-width: 360px) {
+    .modal-content {
+        width: 95%;
+        padding: 5px;
+    }
+    form input,
+    form textarea {
+        padding: 4px;
+        font-size: 0.55rem;
+    }
+    form button {
+        padding: 4px 7px;
+        font-size: 0.55rem;
+    }
+}
+
+
+/* For screens less than 300px */
+
+@media (max-width: 300px) {
+    .modal-content {
+        width: 95%;
+        padding: 5px;
+    }
+    form input,
+    form textarea {
+        padding: 4px;
+        font-size: 0.5rem;
+    }
+    form button {
+        padding: 4px 7px;
+        font-size: 0.5rem;
+    }
+}
